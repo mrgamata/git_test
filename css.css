@@ -1,0 +1,47 @@
+/* Random CSS snippets */
+
+:root{
+	--accent: #ff6b6b;
+	--muted: #6c757d;
+}
+
+body{
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(135deg,#f8f9fa 0%, #e9ecef 100%);
+	color: #212529;
+}
+
+.card-random{
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(33,37,41,0.08);
+	padding: 1rem;
+	transition: transform .18s ease, box-shadow .18s ease;
+}
+.card-random:hover{transform: translateY(-6px); box-shadow:0 18px 36px rgba(33,37,41,0.12);} 
+
+.btn-random{
+	display: inline-block;
+	padding: .5rem 1rem;
+	background: var(--accent);
+	color: #fff;
+	border-radius: 8px;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+.btn-random:active{transform: scale(.99);} 
+
+.muted{color:var(--muted); font-size: .9rem}
+
+/* utility */
+.flex{display:flex}
+.center{display:flex; align-items:center; justify-content:center}
+
+/* small responsive tweak */
+@media (max-width:480px){
+	.card-random{padding:.75rem; border-radius:10px}
+}
+
